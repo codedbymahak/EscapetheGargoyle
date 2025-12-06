@@ -64,7 +64,7 @@ function draw() {
     yspeed = constrain(yspeed, -maxSpeed, maxSpeed);
   }
 
-  background(255);
+  background(255, 252, 248);
   fill(0);
   textSize(20);
   text("Score: " + score.toFixed(2), 55, 25);
