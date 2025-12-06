@@ -36,9 +36,6 @@ function draw() {
 
   if (lost) {
     background(0, 51, 102);
-
-    drawBorder(); // ← added border
-
     textSize(32);
     fill(255);
     textAlign(CENTER, CENTER);
@@ -68,9 +65,6 @@ function draw() {
   }
 
   background(255);
-
-  drawBorder(); // ← added border
-
   fill(0);
   textSize(20);
   text("Score: " + score.toFixed(2), 55, 25);
@@ -92,9 +86,6 @@ function draw() {
 
 function startButton() {
   background(255, 230, 240);
-
-  drawBorder(); // ← added border
-
   fill(224, 0, 112);
   let w = 140;
   let h = 60;
@@ -134,14 +125,4 @@ function mousePressed() {
       speedTimer = 0;
     }
   }
-}
-
-// --------------------------
-// Border function
-// --------------------------
-function drawBorder() {
-  stroke(0);
-  strokeWeight(4);
-  noFill();
-  rect(2, 2, width - 4, height - 4);
 }
