@@ -16,8 +16,8 @@ function setup() {
   x = random(ballSize/2, width - ballSize/2);
   y = random(ballSize/2, height - ballSize/2);
 
-  xspeed = random(-5, 5);
-  yspeed = random(-5, 5);
+  xspeed = random(0, 5);
+  yspeed = random(0, 5);
 }
 
 function preload() {
